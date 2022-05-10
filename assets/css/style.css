@@ -2,12 +2,18 @@
 {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 body
 {
 	overflow-x: hidden;
 }
-img
+.container
+{
+	display: flex;
+	flex-direction: column;
+}
+.container img
 {
 	width: 100%;
 }
