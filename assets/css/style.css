@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 *
 {
 	padding: 0;
@@ -22,4 +23,107 @@ body
 .container a
 {
 	display: flex;
+}
+.container .discount
+{
+	display: flex;
+	justify-content: center;
+	background: #bdc6ab;
+	padding: 12px 0;
+}
+.container .discount .box
+{
+	width: calc(100% - 20px);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 24px;
+	background: #fff;
+	border-radius: 6px;
+	padding: 8px 14px;
+}
+.container .discount .box img
+{
+	width: 36px;
+}
+.container .discount .box p
+{
+	font-size: 26px;
+	font-weight: 600;
+	font-family: 'Manrope', sans-serif;
+	text-transform: uppercase;
+	word-spacing: 2px;
+	color: #4a4646;
+}
+.container .discount .box p span.date-wrapper
+{
+	position: absolute;
+	font-weight: 800;
+	font-style: italic;
+	animation: shake 1.2s infinite;
+	margin-left: 8px;
+}
+@keyframes shake {
+	0%, 40%, 100%
+	{
+		transform: translate(1px, -1px);
+	}
+	20%
+	{
+		transform: translate(1px, 1px);
+	}
+	60%
+	{
+		transform: translate(-1px, 1px);
+	}
+	80%
+	{
+		transform: translate(-1px, -1px);
+	}
+}
+
+@media (max-width: 420px)
+{
+	.container .discount .box
+	{
+		gap: 12px;
+		padding: 6px 10px;
+		border-radius: 4px;
+	}
+	.container .discount .box img
+	{
+		width: 24px;
+	}
+	.container .discount .box p
+	{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 380px)
+{
+	.container .discount .box
+	{
+		padding: 4px 8px;
+	}
+	.container .discount .box img
+	{
+		width: 20px;
+	}
+	.container .discount .box p
+	{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 340px)
+{
+	.container .discount .box img
+	{
+		width: 18px;
+	}
+	.container .discount .box p
+	{
+		font-size: 14px;
+	}
 }
