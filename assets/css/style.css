@@ -19,3 +19,7 @@ body
 {
 	width: 100%;
 }
+.container a
+{
+	display: flex;
+}
