@@ -11,7 +11,7 @@
 // 	localStorage.setItem('waktu', waktu)
 // }, 1000);
 
-var countDownDate = new Date("06 1, 2024").getTime();
+var countDownDate = new Date("June 01, 2024").getTime();
 
 var x = setInterval(function() {
 	var now = new Date().getTime();
