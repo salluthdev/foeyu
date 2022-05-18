@@ -28,7 +28,6 @@ body
 {
 	display: flex;
 	justify-content: center;
-	background: #bdc6ab;
 	padding: 12px 0;
 }
 .container .discount .box
@@ -37,14 +36,22 @@ body
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 24px;
-	background: #fff;
+	background: #8c9f68;
 	border-radius: 6px;
+}
+.container .discount .box .icon-wrapper
+{
+	background: #748455;
+	border-radius: 6px;
+	padding: 6px 18px 6px 14px;
+}
+.container .discount .box p
+{
 	padding: 8px 14px;
 }
-.container .discount .box img
+.container .discount .box .icon-wrapper img
 {
-	width: 36px;
+	width: 34px;
 }
 .container .discount .box p
 {
@@ -53,7 +60,7 @@ body
 	font-family: 'Manrope', sans-serif;
 	text-transform: uppercase;
 	word-spacing: 2px;
-	color: #4a4646;
+	color: #fff;
 }
 .container .discount .box p span.date-wrapper
 {
@@ -63,7 +70,8 @@ body
 	animation: shake 1.2s infinite;
 	margin-left: 8px;
 }
-@keyframes shake {
+@keyframes shake
+{
 	0%, 40%, 100%
 	{
 		transform: translate(1px, -1px);
@@ -84,15 +92,22 @@ body
 
 @media (max-width: 420px)
 {
-	.container .discount .box
+	.container .discount .box,
+	.container .discount .box .icon-wrapper
 	{
-		gap: 12px;
-		padding: 6px 10px;
 		border-radius: 4px;
 	}
-	.container .discount .box img
+	.container .discount .box .icon-wrapper
 	{
-		width: 24px;
+		padding: 6px 14px 6px 10px;
+	}
+	.container .discount .box p
+	{
+		padding: 6px 10px;
+	}
+	.container .discount .box .icon-wrapper img
+	{
+		width: 22px;
 	}
 	.container .discount .box p
 	{
@@ -102,13 +117,17 @@ body
 
 @media (max-width: 380px)
 {
-	.container .discount .box
+	.container .discount .box .icon-wrapper
+	{
+		padding: 4px 10px 4px 8px;
+	}
+	.container .discount .box p
 	{
 		padding: 4px 8px;
 	}
-	.container .discount .box img
+	.container .discount .box .icon-wrapper img
 	{
-		width: 20px;
+		width: 18px;
 	}
 	.container .discount .box p
 	{
@@ -118,9 +137,9 @@ body
 
 @media (max-width: 340px)
 {
-	.container .discount .box img
+	.container .discount .box .icon-wrapper img
 	{
-		width: 18px;
+		width: 16px;
 	}
 	.container .discount .box p
 	{
