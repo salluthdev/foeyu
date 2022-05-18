@@ -7,6 +7,7 @@
 }
 body
 {
+	font-family: 'Manrope', sans-serif;
 	overflow-x: hidden;
 }
 .container
@@ -49,7 +50,8 @@ body
 {
 	padding: 8px 14px;
 }
-.container .discount .box .icon-wrapper img
+.container .discount .box .icon-wrapper img,
+.container .buy-fixed .btn-buy img
 {
 	width: 34px;
 }
@@ -57,7 +59,6 @@ body
 {
 	font-size: 26px;
 	font-weight: 600;
-	font-family: 'Manrope', sans-serif;
 	text-transform: uppercase;
 	word-spacing: 2px;
 	color: #fff;
@@ -89,6 +90,50 @@ body
 		transform: translate(-1px, -1px);
 	}
 }
+.container img.last
+{
+	margin-bottom: 70px;
+}
+.container .buy-fixed
+{
+	width: 100%;
+	max-width: 600px;
+	height: 70px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #748455;
+}
+.container .buy-fixed a
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-decoration: none;
+}
+.container .buy-fixed .btn-buy
+{
+	width: calc(100% - 24px);
+	max-width: 500px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+	background: #fff;
+	border-radius: 16px;
+	padding: 8px 14px;
+}
+.container .buy-fixed .btn-buy p
+{
+	font-size: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #748455;
+}
 
 @media (max-width: 420px)
 {
@@ -105,13 +150,28 @@ body
 	{
 		padding: 6px 10px;
 	}
-	.container .discount .box .icon-wrapper img
+	.container .discount .box .icon-wrapper img,
+	.container .buy-fixed .btn-buy img
 	{
 		width: 22px;
 	}
-	.container .discount .box p
+	.container .discount .box p,
+	.container .buy-fixed .btn-buy p
 	{
 		font-size: 18px;
+	}
+	.container img.last
+	{
+		margin-bottom: 60px;
+	}
+	.container .buy-fixed
+	{
+		height: 60px;
+	}
+	.container .buy-fixed .btn-buy
+	{
+		height: 40px;
+		gap: 12px;
 	}
 }
 
@@ -129,19 +189,37 @@ body
 	{
 		width: 18px;
 	}
-	.container .discount .box p
+	.container .discount .box p,
+	.container .buy-fixed .btn-buy p
 	{
 		font-size: 16px;
+	}
+	.container .buy-fixed .btn-buy
+	{
+		gap: 8px;
+	}
+	.container .buy-fixed .btn-buy img
+	{
+		width: 22px;
 	}
 }
 
 @media (max-width: 340px)
 {
-	.container .discount .box .icon-wrapper img
+	.container .discount .box .icon-wrapper img,
 	{
 		width: 16px;
 	}
-	.container .discount .box p
+	.container .buy-fixed .btn-buy
+	{
+		height: 36px;
+	}
+	.container .buy-fixed .btn-buy img
+	{
+		width: 19px;
+	}
+	.container .discount .box p,
+	.container .buy-fixed .btn-buy p
 	{
 		font-size: 14px;
 	}
