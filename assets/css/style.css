@@ -69,7 +69,7 @@ body
 	font-weight: 800;
 	font-style: italic;
 	animation: shake 1.2s infinite;
-	margin-left: 8px;
+	margin-left: 6px;
 }
 @keyframes shake
 {
@@ -147,8 +147,20 @@ body
 	}
 }
 
+@media (max-width: 627px)
+{
+	.container .discount .box p
+	{
+		font-size: 21px;
+	}
+}
+
 @media (max-width: 480px)
 {
+	.container .discount .box p
+	{
+		font-size: 18px;
+	}
 	.container .buy-fixed .btn-buy
 	{
 		padding: 12px 14px;
